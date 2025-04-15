@@ -1,0 +1,7 @@
+{
+  "name": "poo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
