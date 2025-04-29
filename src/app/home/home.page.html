@@ -1,10 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+
+    <ion-chip slot="end">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c78bc3fc-9f08-47ca-81ae-d89055c7ec49/db0enw6-92a4ff34-7247-45f1-8051-1ea40b2059ca.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M3OGJjM2ZjLTlmMDgtNDdjYS04MWFlLWQ4OTA1NWM3ZWM0OVwvZGIwZW53Ni05MmE0ZmYzNC03MjQ3LTQ1ZjEtODA1MS0xZWE0MGIyMDU5Y2EucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sSluklD5G6XB7s4jVPjj5XTLuSHTR_DTeRSOqwXyz6M" />
+      </ion-avatar>
+      <ion-label>Pedro Augusto</ion-label>
+    </ion-chip>
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-menu contentId="main-content" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,8 +31,30 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seja Bem-Vindo!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://theweereview.com/wp-content/uploads/2021/08/black-midi.jpg" />
+          </ion-thumbnail>
+          <ion-label>King Gizzard & The Wizard Lizard</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://static.wixstatic.com/media/294f34_b8fbad588b8942e2bbb11d4d4d841fb0~mv2.jpg/v1/fill/w_538,h_552,al_c,lg_1,q_80,usm_0.33_1.00_0.00,enc_avif,quality_auto/tool.jpg" />
+          </ion-thumbnail>
+          <ion-label>TOOL</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label>Gojira</ion-label>
+        </ion-item>
+  <ion-content>

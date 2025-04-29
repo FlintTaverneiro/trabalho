@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Apresentacao</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-toolbar>
+      <ion-title size="large">Apresentacao</ion-title>
+    </ion-toolbar>
+  
+
+  <ion-segment>
+    <ion-segment-button value="primeiro" content-id="segundo">
+      <ion-label>primeiro</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segundo" content-id="segundo">
+      <ion-label>segundo</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="terceiro" content-id="terceiro">
+      <ion-label>terceiro</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment-view>
+    <ion-segment-content id="first"><app-etapa1></app-etapa1></ion-segment-content>
+    <ion-segment-content id="second"><app-etapa2></app-etapa2></ion-segment-content>
+    <ion-segment-content id="third"><app-etapa3></app-etapa3></ion-segment-content>
+  </ion-segment-view>
+
+</ion-content>
